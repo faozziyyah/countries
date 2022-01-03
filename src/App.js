@@ -1,6 +1,7 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Countries from './components/Countries';
-import Filter from './components/Filter';
+import Country from './components/Country';
 import Header from './components/Header';
 
 function App() {
@@ -8,8 +9,10 @@ function App() {
   return (
     <>   
         <Header />
-        <Filter />
-        <Countries />  
+        <Routes>
+            <Route exact path="/" element={<Countries />} />
+            <Route path="/countries/:name" element={<Country />} />
+        </Routes> 
     </>
   );
 }

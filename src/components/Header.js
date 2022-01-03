@@ -9,7 +9,7 @@ const Header = () => {
                 </div>
 
                 <div>
-                    <i className="fas fa-moon"></i>Dark Mode
+                 Dark Mode
                 </div>
 
             </header>
