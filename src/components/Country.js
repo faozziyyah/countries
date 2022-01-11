@@ -20,11 +20,11 @@ const Country = () => {
         }
     
         fetchCountryData()
-      }, [])
+      }, [name])
 
     return (
         <>
-            <Link to="/" className="btn btn-light">
+            <Link to="/rest-countries" className="btn btn-light">
             <FontAwesomeIcon className="icon" icon={faArrowLeft} />  Back
             </Link>
             <section className="country">
