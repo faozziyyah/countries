@@ -1,6 +1,32 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
+
+    const changeTheme = () => {
+        const moon = document.querySelector('.btn-change')
+        const header = document.querySelector('.header')
+        //const input = document.querySelector('#search')
+        //const select = document.querySelector('select')
+        const details = document.querySelectorAll('.detailed')
+        const uls = document.querySelectorAll('ul')
+
+        moon.addEventListener('click', () => {
+        document.body.classList.toggle('light-theme')
+        header.classList.toggle('light-theme')
+        //input.classList.toggle('light-theme')
+        //select.classList.toggle('light-theme')
+
+        details.forEach((detail) => {
+            detail.classList.toggle('light-theme')
+        })
+        uls.forEach((ul) => {
+            ul.classList.toggle('light-theme')
+        })
+    })
+    }
+
     return (
         <>
             <header className="header">
@@ -9,7 +35,9 @@ const Header = () => {
                 </div>
 
                 <div>
-                 Dark Mode
+                    <button className="btn btn-change" onClick={() => changeTheme()}>
+                        <FontAwesomeIcon icon={faMoon} />       Dark Mode
+                    </button>
                 </div>
 
             </header>
