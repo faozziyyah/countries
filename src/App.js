@@ -10,7 +10,7 @@ function App() {
     <>   
         <Header />
         <Routes>
-            <Route exact path="/rest-countries" element={<Countries />} />
+            <Route exact path="/countries" element={<Countries />} />
             <Route path="/countries/:name" element={<Country />} />
         </Routes> 
     </>

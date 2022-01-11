@@ -24,7 +24,7 @@ const Country = () => {
 
     return (
         <>
-            <Link to="/rest-countries" className="btn btn-light">
+            <Link to="/countries" className="btn btn-light">
             <FontAwesomeIcon className="icon" icon={faArrowLeft} />  Back
             </Link>
             <section className="country">
