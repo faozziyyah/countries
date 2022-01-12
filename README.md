@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/faozziyyah/rest-countries)
-- Live Site: (https://faozziyyah.github.io/rest-countries/)
+- Solution URL: (https://github.com/faozziyyah/countries)
+- Live Site: (https://faozziyyah.github.io/countries)
 
 ## My process
 
